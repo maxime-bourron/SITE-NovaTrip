@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NovaTrip - Nos voyages</title>
+  <link rel="stylesheet" href="actif/css/style.css">
+  <link rel="icon" href="actif/img/NovaTrip 2.png">
+</head>
+<body>
+  <header>
+    <div class="container brand">
+      <img src="actif/img/NovaTrip 2.png" alt="Logo NovaTrip" class="brand-logo">
+      <h1>NovaTrip</h1>
+    </div>
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="presentation.html">Présentation</a></li>
+          <li><a href="realisations.html" class="active">Nos voyages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Nos voyages</h1>
+      <p class="subtitle">Découvrez nos séjours organisés, classés par date.</p>
+
+      <section class="trips-list">
+        <article class="trip-card">
+          <img src="actif/img/guedelon-beaune-hero.jpg" alt="Chantier médiéval de Guédelon et Hospices de Beaune" class="trip-thumb">
+          <div class="trip-content">
+            <h2>Du château de Guédelon à Beaune</h2>
+            <p class="trip-meta">2 jours · 209 € · 10–11 mai 2014</p>
+            <p class="trip-location">Région : Bourgogne-Franche-Comté, France</p>
+            <p class="trip-short">
+              Immersion au Moyen Âge sur le chantier de Guédelon, puis découverte des célèbres
+              Hospices de Beaune au cœur des vignobles bourguignons.
+            </p>
+            <a href="catalogue/140510ChateauGuedelon.html" class="btn">Voir le voyage</a>
+          </div>
+        </article>
+
+        <article class="trip-card">
+          <img src="actif/img/cinque-terre-hero.jpg" alt="Vue des Cinque Terres" class="trip-thumb">
+          <div class="trip-content">
+            <h2>Les Cinq Terres : merveille de l’Italie</h2>
+            <p class="trip-meta">4 jours · 499 € · Du 29 mai au 1er juin 2014</p>
+            <p class="trip-location">Région : La Spezia (Ligurie, Italie)</p>
+            <p class="trip-short">
+              Séjour en Ligurie entre villages colorés, ports de pêche, côte fleurie
+              et excursions en bateau le long des Cinq Terres.
+            </p>
+            <a href="catalogue/140529CinqTerres.html" class="btn">Voir le voyage</a>
+          </div>
+        </article>
+
+        <article class="trip-card">
+          <img src="actif/img/nice-monaco-hero.jpg" alt="Nice et la principauté de Monaco" class="trip-thumb">
+          <div class="trip-content">
+            <h2>Nice et Monaco</h2>
+            <p class="trip-meta">2 jours · 239 € · 21–22 juin 2014</p>
+            <p class="trip-location">Région : Côte d’Azur, France</p>
+            <p class="trip-short">
+              Escapade sur la Côte d’Azur entre Promenade des Anglais, vieux Nice
+              et visite du musée océanographique de Monaco.
+            </p>
+            <a href="catalogue/140621Nice&Monaco.html" class="btn">Voir le voyage</a>
+          </div>
+        </article>
+
+        <article class="trip-card">
+          <img src="actif/img/blois-chambord-hero.jpg" alt="Château de Chambord" class="trip-thumb">
+          <div class="trip-content">
+            <h2>Entre Blois et Chambord</h2>
+            <p class="trip-meta">2 jours · 249 € · 23–24 août 2014</p>
+            <p class="trip-location">Région : Centre-Val de Loire, France</p>
+            <p class="trip-short">
+              Week-end au cœur des châteaux de la Loire avec visite de Blois en attelage
+              et découverte du majestueux château de Chambord.
+            </p>
+            <a href="catalogue/140823Blois&Chambord.html" class="btn">Voir le voyage</a>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> NovaTrip - By MaxiDev</div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

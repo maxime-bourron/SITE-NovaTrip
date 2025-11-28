@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NovaTrip - Présentation</title>
+  <link rel="stylesheet" href="actif/css/style.css">
+  <link rel="icon" href="actif/img/NovaTrip 2.png">
+</head>
+<body>
+  <header>
+    <div class="container brand">
+      <img src="actif/img/NovaTrip 2.png" alt="Logo NovaTrip" class="brand-logo">
+      <h1>NovaTrip</h1>
+    </div>
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="presentation.html">Présentation</a></li>
+          <li><a href="realisations.html">Nos voyages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Présentation de NovaTrip</h1>
+      <p class="subtitle">Votre agence de voyages spécialisée dans les séjours organisés.</p>
+
+      <section class="presentation-content">
+        <p>
+          Fondée en 2000, NovaTrip est une agence de voyages dédiée à la création
+          de séjours organisés uniques et mémorables. Notre équipe passionnée
+          travaille sans relâche pour vous offrir des expériences de voyage
+          authentiques, alliant découverte culturelle, détente et aventure.
+        </p>
+
+        <p>
+          Nous proposons une large gamme de destinations, allant des escapades
+          citadines aux séjours balnéaires, en passant par des aventures en pleine
+          nature. Chaque voyage est soigneusement conçu pour répondre aux attentes
+          et aux envies de nos clients.
+        </p>
+
+        <p>
+          Chez NovaTrip, nous croyons que le voyage est bien plus qu'une simple
+          destination. C'est une opportunité de créer des souvenirs inoubliables,
+          de rencontrer de nouvelles cultures et de vivre des expériences enrichissantes.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> NovaTrip - By MaxiDev</div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NovaTrip</title>
+  <link rel="stylesheet" href="actif/css/style.css">
+  <link rel="icon" href="actif/img/NovaTrip 2.png">
+</head>
+<body>
+  <header>
+    <div class="container brand">
+      <img src="actif/img/NovaTrip 2.png" alt="Logo NovaTrip" class="brand-logo">
+      <h1>NovaTrip</h1>
+    </div>
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="presentation.html">Présentation</a></li>
+          <li><a href="realisations.html">Nos voyages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Bloc de bienvenue -->
+      <h1>Bienvenue chez NovaTrip</h1>
+      <p class="subtitle">Votre agence de voyages spécialisée dans les séjours organisés.</p>
+
+      <section class="welcome-content">
+        <p>
+          Chez NovaTrip, nous nous engageons à vous offrir des expériences de voyage
+          inoubliables. Explorez notre site pour découvrir nos destinations,
+          nos offres spéciales et en savoir plus sur notre agence.
+        </p>
+
+        <p>
+          N'hésitez pas à nous contacter pour toute question ou pour planifier
+          votre prochain voyage avec nous !
+        </p>
+      </section>
+
+      <!-- Liste simple des voyages disponibles -->
+      <section>
+        <h2 class="section-title">Nos voyages disponibles</h2>
+
+        <div class="trips-list">
+
+          <!-- CINQ TERRES -->
+          <article class="trip-card">
+            <img src="actif/img/cinque-terre-hero.jpg" alt="Vue des Cinque Terres" class="trip-thumb">
+            <div class="trip-content">
+              <h2>Les Cinq Terres : merveille de l’Italie</h2>
+              <p class="trip-meta">4 jours · 499 € · Du 29 mai au 1er juin 2014</p>
+              <p class="trip-location">La Spezia (Ligurie, Italie)</p>
+              <p class="trip-short">
+                Villages colorés, ports de pêche et croisière le long de la côte fleurie des Cinq Terres.
+              </p>
+              <a href="voyages/cinq-terres.html" class="btn">Voir le voyage</a>
+            </div>
+          </article>
+
+          <!-- BLOIS / CHAMBORD -->
+          <article class="trip-card">
+            <img src="actif/img/blois-chambord-hero.jpg" alt="Château de Chambord" class="trip-thumb">
+            <div class="trip-content">
+              <h2>Entre Blois et Chambord</h2>
+              <p class="trip-meta">2 jours · 249 € · 23–24 août 2014</p>
+              <p class="trip-location">Centre-Val de Loire, France</p>
+              <p class="trip-short">
+                Week-end au cœur des châteaux de la Loire, entre visite de Blois en attelage
+                et découverte du majestueux château de Chambord.
+              </p>
+              <a href="voyages/blois-chambord.html" class="btn">Voir le voyage</a>
+            </div>
+          </article>
+        </div>
+
+        <p style="text-align:center; margin-top:10px;">
+          <a href="realisations.html" class="btn">Voir tous nos voyages</a>
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> NovaTrip - By MaxiDev</div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

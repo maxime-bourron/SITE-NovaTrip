@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NovaTrip - Nice et Monaco</title>
+  <link rel="stylesheet" href="../actif/css/style.css">
+  <link rel="icon" href="../actif/img/NovaTrip 2.png">
+</head>
+<body>
+  <header>
+    <div class="container brand">
+      <img src="../actif/img/NovaTrip 2.png" alt="Logo NovaTrip" class="brand-logo">
+      <h1>NovaTrip</h1>
+    </div>
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../presentation.html">Présentation</a></li>
+          <li><a href="../realisations.html">Nos voyages</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Image d'en-tête + badges -->
+  <section class="hero">
+    <img src="../actif/img/nice-monaco-hero.jpg" alt="Vue de Nice et de la Principauté de Monaco" />
+    <div class="badge-offer">
+      <div class="days">2 jours</div>
+      <div class="price">239 €</div>
+    </div>
+    <div class="ribbon">Escapade Côte d’Azur</div>
+  </section>
+
+  <main>
+    <div class="container">
+      <h1>NICE ET MONACO</h1>
+      <p class="subtitle">Du samedi 21 au dimanche 22 juin 2014</p>
+
+      <table class="infos">
+        <tr>
+          <th>Durée</th>
+          <td>2 jours</td>
+        </tr>
+        <tr>
+          <th>Prix</th>
+          <td>239 €</td>
+        </tr>
+        <tr>
+          <th>Dates</th>
+          <td>Du samedi 21 au dimanche 22 juin 2014</td>
+        </tr>
+        <tr>
+          <th>Région</th>
+          <td>Côte d’Azur, France</td>
+        </tr>
+      </table>
+
+      <div class="card">
+        <h3 class="section-title">Samedi : Votre localité → Nice</h3>
+        <p>Départ de votre localité en direction de la Côte d’Azur. Arrivée à Nice pour le déjeuner. L’après-midi, vous ferez la visite guidée de Nice et partirez à la découverte de la célèbre Promenade des Anglais, du marché aux fleurs, des édifices de la Belle Époque et de ses vieux quartiers. Puis vous rejoindrez votre hôtel pour le dîner et logement.</p>
+
+        <h3 class="section-title">Dimanche : Monaco → Retour</h3>
+        <p>Petit déjeuner à l’hôtel et direction la Principauté de Monaco pour la visite du musée océanographique. Culminant à 85 mètres au-dessus des flots, sur 6&nbsp;000&nbsp;m², ce «&nbsp;Palais de la Mer&nbsp;» expose 700 espèces dans une centaine d’aquariums aux écosystèmes vivants fidèlement reconstitués. Les expositions avant-gardistes côtoient les collections dans ces lieux où tout invite à la connaissance et à la protection des océans. Puis rendez-vous avec votre guide pour une visite panoramique de Monaco. Vous assisterez également à la relève de la garde princière. Déjeuner au restaurant avant de reprendre le chemin du retour. Arrivée prévue en soirée.</p>
+      </div>
+
+      <h4 class="section-title" style="margin-top:20px">Nos prix comprennent :</h4>
+      <ul class="tick">
+        <li>Le transport en autocar grand tourisme.</li>
+        <li>L’hébergement en hôtel ** en chambre double.</li>
+        <li>Les repas : du déjeuner du jour 1 au déjeuner du jour 2.</li>
+        <li>Les visites et excursions mentionnées au programme.</li>
+        <li>L’assurance rapatriement.</li>
+      </ul>
+
+      <h4 class="section-title" style="margin-top:18px">Nos prix ne comprennent pas :</h4>
+      <ul class="cross">
+        <li>Le supplément chambre individuelle : 35 €.</li>
+        <li>Les boissons.</li>
+        <li>L’assurance annulation : 10 €.</li>
+      </ul>
+
+      <h4 class="section-title" style="margin-top:18px">Formalité :</h4>
+      <p>Carte d’identité en cours de validité.</p>
+
+      <div class="gallery" aria-label="Galerie de photos">
+        <img src="../actif/img/nice-monaco-01.jpg" alt="Promenade des Anglais à Nice" />
+        <img src="../actif/img/nice-monaco-02.jpg" alt="Musée océanographique de Monaco" />
+        <img src="../actif/img/nice-monaco-03.jpg" alt="Vue panoramique de Monaco" />
+      </div>
+
+      <p style="color:var(--muted); margin-top:8px">Prix par personne, base chambre double.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> NovaTrip - By MaxiDev</div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
