@@ -1,521 +1,467 @@
-/******************************************
- *                VARIABLES
- ******************************************/
 :root {
-    --primary: #c0205a;       /* magenta titre */
-    --primary-700: #98184a;
-    --accent: #ffb703;        /* jaune badge */
-    --accent-700: #f39c12;    /* orange */
-    --ink: #1f1f1f;           /* texte */
-    --muted: #666;            /* texte secondaire */
-    --border: #e7e7e7;        /* bordure claire */
-    --paper: #ffffff;         /* fond cartes */
-    --bg: #fffaf3;            /* léger ivoire */
+  --primary: #c0205a;
+  --primary-700: #98184a;
+  --secondary: #ffb703;
+  --secondary-700: #f39c12;
+  --ink: #1f1f1f;
+  --muted: #666;
+  --border: #e7e7e7;
+  --paper: #ffffff;
+  --bg: #fffaf3;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-/******************************************
- *                BASE GLOBALE
- ******************************************/
 html, body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: var(--ink);
-    background: var(--bg);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--bg);
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .container {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 0 16px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
-
-/******************************************
- *                HEADER
- ******************************************/
 header {
-    background: var(--paper);
-    border-bottom: 1px solid var(--border);
+  background: var(--paper);
+  border-bottom: 1px solid var(--border);
 }
 
 .brand {
-    display: flex;
-    align-items: flex-end;
-    gap: 12px;
-    padding: 18px 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  padding: 18px 0;
 }
 
 .brand h1 {
-    margin: 0;
-    font-size: 30px;
-    letter-spacing: .5px;
-    color: var(--primary);
-}
-
-.brand p {
-    margin: 4px 0 0;
-    color: var(--muted);
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  color: var(--primary);
 }
 
 .brand-logo {
-    height: 48px;
-    width: auto;
-    object-fit: contain;
+  height: 48px;
+  width: auto;
+  object-fit: contain;
 }
 
-
-/******************************************
- *                NAVIGATION
- ******************************************/
 nav {
-    background: linear-gradient(90deg, var(--primary) 0%, var(--primary-700) 100%);
+  background: linear-gradient(90deg, var(--primary) 0%, var(--primary-700) 100%);
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 nav a {
-    display: block;
-    padding: 10px 14px;
-    color: #fff;
-    font-weight: 600;
+  display: block;
+  padding: 10px 14px;
+  color: var(--paper);
+  font-weight: 600;
+  border-radius: 10px;
 }
 
 nav a:hover {
-    background-color: var(--primary-700);
-    border-radius: 10px;
+  background-color: var(--primary-700);
 }
 
+nav a.active {
+  background: rgba(255, 255, 255, 0.18);
+}
 
-/******************************************
- *                SECTION HÉRO
- ******************************************/
 .hero {
-    position: relative;
-    background: #ddd;
-    border-bottom: 1px solid var(--border);
+  position: relative;
+  background: #ddd;
+  border-bottom: 1px solid var(--border);
 }
 
 .hero img {
-    width: 100%;
-    height: 360px;
-    object-fit: cover;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
 }
 
 .badge-offer {
-    position: absolute;
-    left: 16px;
-    top: 16px;
-    background: var(--primary);
-    color: #fff;
-    padding: 12px 14px;
-    border-radius: 8px;
-    box-shadow: 0 6px 16px rgba(0,0,0,.18);
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  background: var(--primary);
+  color: var(--paper);
+  padding: 12px 14px;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 }
 
 .badge-offer .days {
-    font-weight: 800;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: .5px;
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .badge-offer .price {
-    margin-top: 6px;
-    font-size: 28px;
-    font-weight: 900;
+  margin-top: 6px;
+  font-size: 28px;
+  font-weight: 900;
 }
 
 .ribbon {
-    position: absolute;
-    left: 16px;
-    bottom: 16px;
-    background: var(--accent);
-    color: #5b3b00;
-    padding: 10px 14px;
-    border-radius: 6px;
-    font-weight: 700;
-    box-shadow: 0 6px 16px rgba(0,0,0,.14);
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  background: var(--secondary);
+  color: #5b3b00;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: 700;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
 }
 
-
-/******************************************
- *                TITRES & TEXTES
- ******************************************/
 main {
-    padding: 24px 0;
+  padding: 24px 0;
 }
 
 h1 {
-    font-size: 28px;
-    margin: 0 0 8px;
-    color: var(--primary);
+  font-size: 28px;
+  margin: 0 0 8px;
+  color: var(--primary);
 }
 
 .subtitle {
-    margin: 0 0 16px;
-    color: var(--muted);
+  margin: 0 0 16px;
+  color: var(--muted);
 }
 
+.section-title {
+  margin: 18px 0 8px;
+  font-size: 18px;
+  color: var(--primary-700);
+}
 
-/******************************************
- *        TABLEAU D’INFOS VOYAGE
- ******************************************/
+.card {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+li {
+  margin: 6px 0;
+}
+
+.center-actions {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.note {
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+.section-title--spaced-20 {
+  margin-top: 20px;
+}
+
+.section-title--spaced-18 {
+  margin-top: 18px;
+}
+
+.tick,
+.cross {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tick li,
+.cross li {
+  position: relative;
+  padding-left: 22px;
+}
+
+.tick li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--secondary-700);
+  font-weight: 700;
+}
+
+.cross li::before {
+  content: "✘";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #e74c3c;
+  font-weight: 700;
+}
+
 .infos {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 10px 0 18px;
-    background: var(--paper);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    overflow: hidden;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0 18px;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .infos th,
 .infos td {
-    border: 1px solid var(--border);
-    padding: 10px 12px;
-    text-align: left;
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
 }
 
 .infos th {
-    background: #fff3db;
-    color: #5b3b00;
+  background: #fff3db;
+  color: #5b3b00;
 }
 
-
-/******************************************
- *                CARTES
- ******************************************/
-.card {
-    background: var(--paper);
-    border: 1px solid var(--border);
-    padding: 16px;
-    border-radius: 8px;
-}
-
-.section-title {
-    margin: 18px 0 8px;
-    font-size: 18px;
-    color: var(--primary-700);
-    position: relative;
-}
-
-
-/******************************************
- *             LISTES SPÉCIALES
- ******************************************/
-ul {
-    padding-left: 22px;
-}
-
-li {
-    margin: 6px 0;
-}
-
-.tick {
-    list-style: none;
-    padding-left: 0;
-}
-
-.tick li {
-    position: relative;
-    padding-left: 22px;
-}
-
-.tick li::before {
-    content: "✔";
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: var(--accent-700);
-    font-weight: 700;
-}
-
-.cross {
-    list-style: none;
-    padding-left: 0;
-}
-
-.cross li {
-    position: relative;
-    padding-left: 22px;
-}
-
-.cross li::before {
-    content: "✘";
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #e74c3c;
-    font-weight: 700;
-}
-
-
-/******************************************
- *                GALERIE
- ******************************************/
 .gallery {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .gallery img {
-    width: 100%;
-    max-width: 310px;
-    border: 1px solid var(--border);
-    border-radius: 6px;
+  width: 100%;
+  max-width: 310px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
 }
 
-
-/******************************************
- *         PAGE — LISTE DES VOYAGES
- ******************************************/
 .trips-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin: 1.5rem 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1.5rem 0 2.5rem;
 }
 
 .trip-card {
-    display: flex;
-    gap: 1rem;
-    background: var(--paper);
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  display: flex;
+  gap: 1rem;
+  background: var(--paper);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border);
 }
 
 .trip-thumb {
-    width: 180px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 6px;
-    flex-shrink: 0;
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
 }
 
 .trip-content h2 {
-    margin: 0 0 .3rem;
-    font-size: 1.1rem;
+  margin: 0 0 0.3rem;
+  font-size: 1.1rem;
 }
 
 .trip-meta {
-    font-weight: 600;
-    margin: 0 0 .2rem;
+  font-weight: 600;
+  margin: 0 0 0.2rem;
 }
 
 .trip-location {
-    font-size: .9rem;
-    color: var(--muted);
-    margin: 0 0 .4rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 0.4rem;
 }
 
 .trip-short {
-    font-size: .95rem;
-    margin: 0 0 .6rem;
+  font-size: 0.95rem;
+  margin: 0 0 0.6rem;
 }
 
 .btn {
-    display: inline-block;
-    padding: .4rem .9rem;
-    border-radius: 999px;
-    color: #fff;
-    background-color: var(--primary);
-    font-size: .9rem;
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  color: var(--paper);
+  background-color: var(--primary);
+  font-size: 0.9rem;
 }
 
 .btn:hover {
-    background-color: var(--primary-700);
+  background-color: var(--primary-700);
 }
 
-
-/******************************************
- *              TABLEAU CONTACT
- ******************************************/
 .contact-table {
-    margin: 2rem auto;
-    max-width: 700px;
+  margin: 2rem auto;
+  max-width: 700px;
 }
 
 .contact-table h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .contact-table table {
-    width: 100%;
-    border-collapse: collapse;
-    background: var(--paper);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--paper);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-table th {
-    background: var(--primary);
-    color: #fff;
-    font-weight: 600;
-    padding: 12px;
-    width: 35%;
-    text-align: left;
+  background: var(--primary);
+  color: var(--paper);
+  font-weight: 600;
+  padding: 12px;
+  width: 35%;
+  text-align: left;
 }
 
 .contact-table td {
-    padding: 12px;
-    background: #f0f0f0;
+  padding: 12px;
+  background: #f0f0f0;
 }
 
 .contact-table tr:nth-child(even) th {
-    background: var(--primary-700);
+  background: var(--primary-700);
 }
 
 .contact-table tr:nth-child(even) td {
-    background: #fafafa;
+  background: #fafafa;
 }
 
 .contact-table a {
-    color: var(--primary);
-    font-weight: 600;
+  color: var(--primary);
+  font-weight: 600;
 }
 
 .contact-table a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
-/******************************************
- *            FORMULAIRE CONTACT
- ******************************************/
 .contact-form {
-    max-width: 700px;
-    margin: 0 auto 3rem;
-    padding: 1.5rem 1.75rem;
-    background: var(--paper);
-    border-radius: 10px;
-    border: 1px solid var(--border);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  padding: 1.5rem 1.75rem;
+  background: var(--paper);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .contact-form h2 {
-    margin: 0 0 6px;
-    font-size: 22px;
-    color: var(--primary);
-    text-align: center;
+  margin: 0 0 6px;
+  font-size: 22px;
+  color: var(--primary);
+  text-align: center;
 }
 
 .contact-form .subtitle {
-    text-align: center;
-    margin-bottom: 18px;
-    color: var(--muted);
-    font-size: 0.95rem;
-}
-
-.contact-form form {
-    margin-top: 8px;
+  text-align: center;
+  margin-bottom: 18px;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
 }
 
 .form-group label {
-    font-weight: 600;
-    margin-bottom: 4px;
-    font-size: 0.95rem;
-    color: var(--ink);
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+  color: var(--ink);
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    padding: 10px 12px;
-    border-radius: 6px;
-    border: 1px solid var(--border);
-    background: #fafafa;
-    font: inherit;
-    outline: none;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: #fafafa;
+  font: inherit;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .contact-form textarea {
-    resize: vertical;
-    min-height: 120px;
+  resize: vertical;
+  min-height: 120px;
 }
 
 .contact-form input[type="text"]:focus,
 .contact-form input[type="email"]:focus,
 .contact-form textarea:focus {
-    border-color: var(--primary);
-    background: #fff;
-    box-shadow: 0 0 0 3px rgba(192, 32, 90, 0.12);
+  border-color: var(--primary);
+  background: var(--paper);
+  box-shadow: 0 0 0 3px rgba(192, 32, 90, 0.12);
 }
 
 .contact-form .btn {
-    margin-top: 6px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
+  margin-top: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
 }
 
-
-/******************************************
- *                FOOTER
- ******************************************/
 footer {
-    padding: 18px 0;
-    color: #7a7a7a;
-    font-size: 14px;
-    text-align: center;
-}
-
-
-/******************************************
- *             RESPONSIVE
- ******************************************/
-@media (max-width: 700px) {
-    .trip-card {
-        flex-direction: column;
-    }
-
-    .trip-thumb {
-        width: 100%;
-        height: 180px;
-    }
+  padding: 18px 0;
+  color: #7a7a7a;
+  font-size: 14px;
+  text-align: center;
 }
 
 @media (max-width: 700px) {
-    .contact-form {
-        padding: 1.25rem 1rem;
-    }
+  nav a {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
 
-    .contact-form .btn {
-        width: 100%;
-        text-align: center;
-    }
+  .trip-card {
+    flex-direction: column;
+  }
+
+  .trip-thumb {
+    width: 100%;
+    height: 180px;
+  }
 }

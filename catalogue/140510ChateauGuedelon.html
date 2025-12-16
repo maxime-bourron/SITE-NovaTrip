@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../actif/css/style.css">
   <link rel="icon" href="../actif/img/NovaTrip 2.png">
 </head>
+
 <body>
   <header>
     <div class="container brand">
@@ -25,9 +26,8 @@
     </nav>
   </header>
 
-  <!-- Image d'en-tête + badges -->
   <section class="hero">
-    <img src="../actif/img/guedelon-beaune-hero.jpg" alt="Chantier médiéval de Guédelon et toits polychromes de Beaune" />
+    <img src="../actif/img/guedelon-beaune-hero.jpg" alt="Chantier médiéval de Guédelon et toits polychromes de Beaune">
     <div class="badge-offer">
       <div class="days">2 jours</div>
       <div class="price">209 €</div>
@@ -41,22 +41,10 @@
       <p class="subtitle">Du samedi 10 au dimanche 11 mai 2014</p>
 
       <table class="infos">
-        <tr>
-          <th>Durée</th>
-          <td>2 jours</td>
-        </tr>
-        <tr>
-          <th>Prix</th>
-          <td>209 €</td>
-        </tr>
-        <tr>
-          <th>Dates</th>
-          <td>Du samedi 10 au dimanche 11 mai 2014</td>
-        </tr>
-        <tr>
-          <th>Région</th>
-          <td>Yonne & Côte-d’Or (Bourgogne-Franche-Comté, France)</td>
-        </tr>
+        <tr><th>Durée</th><td>2 jours</td></tr>
+        <tr><th>Prix</th><td>209 €</td></tr>
+        <tr><th>Dates</th><td>Du samedi 10 au dimanche 11 mai 2014</td></tr>
+        <tr><th>Région</th><td>Yonne & Côte-d’Or (Bourgogne-Franche-Comté, France)</td></tr>
       </table>
 
       <div class="card">
@@ -67,32 +55,32 @@
         <p>Petit déjeuner à l’hôtel et départ pour Beaune. Vous serez accueilli aux célèbres Hospices de Beaune pour une visite guidée. Près de 400&nbsp;000 visiteurs côtoient chaque année l’Hôtel-Dieu, qui couvre aujourd’hui une aire importante de la ville de Beaune avec son musée, ses trois cours, ses dépendances, son bastion et ses caves conservant notamment la réserve personnelle des Hospices. Déjeuner au restaurant, puis petit temps libre avant le retour direct vers votre localité. Arrivée prévue en fin de journée.</p>
       </div>
 
-      <h4 class="section-title" style="margin-top:20px">Nos prix comprennent :</h4>
+      <h4 class="section-title section-title--spaced-20">Nos prix comprennent :</h4>
       <ul class="tick">
         <li>Le transport en autocar grand tourisme.</li>
-        <li>L’hébergement en chambre double dans un hôtel **.</li>
+        <li>L’hébergement en chambre double dans un hôtel 2 étoiles.</li>
         <li>Les repas : du déjeuner du jour 1 au déjeuner du jour 2.</li>
         <li>Les visites et excursions mentionnées au programme.</li>
         <li>L’assurance rapatriement.</li>
       </ul>
 
-      <h4 class="section-title" style="margin-top:18px">Nos prix ne comprennent pas :</h4>
+      <h4 class="section-title section-title--spaced-18">Nos prix ne comprennent pas :</h4>
       <ul class="cross">
         <li>Le supplément chambre individuelle : 30 €.</li>
         <li>Les boissons.</li>
         <li>L’assurance annulation : 10 €.</li>
       </ul>
 
-      <h4 class="section-title" style="margin-top:18px">Formalité :</h4>
+      <h4 class="section-title section-title--spaced-18">Formalité :</h4>
       <p>Carte d’identité en cours de validité.</p>
 
       <div class="gallery" aria-label="Galerie de photos">
-        <img src="../actif/img/guedelon-beaune-01.jpg" alt="Chantier médiéval du château de Guédelon" />
-        <img src="../actif/img/guedelon-beaune-02.jpg" alt="Hospices de Beaune - toits polychromes" />
-        <img src="../actif/img/guedelon-beaune-03.jpg" alt="Vignes autour de Beaune" />
+        <img src="../actif/img/guedelon-beaune-01.jpg" alt="Chantier médiéval du château de Guédelon">
+        <img src="../actif/img/guedelon-beaune-02.jpg" alt="Hospices de Beaune - toits polychromes">
+        <img src="../actif/img/guedelon-beaune-03.jpg" alt="Vignes autour de Beaune">
       </div>
 
-      <p style="color:var(--muted); margin-top:8px">Prix par personne, base chambre double.</p>
+      <p class="note">Prix par personne, base chambre double.</p>
     </div>
   </main>
 
@@ -100,6 +88,8 @@
     <div class="container">© <span id="y"></span> NovaTrip - By MaxiDev</div>
   </footer>
 
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

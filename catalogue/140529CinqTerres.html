@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../actif/css/style.css">
   <link rel="icon" href="../actif/img/NovaTrip 2.png">
 </head>
+
 <body>
   <header>
     <div class="container brand">
@@ -25,9 +26,8 @@
     </nav>
   </header>
 
-  <!-- Image d'en-tête + badges inspirés de l'affiche -->
   <section class="hero">
-    <img src="../actif/img/cinque-terre-hero.jpg" alt="Cinque Terres - vue générale" />
+    <img src="../actif/img/cinque-terre-hero.jpg" alt="Cinque Terres - vue générale">
     <div class="badge-offer">
       <div class="days">4 jours</div>
       <div class="price">499 €</div>
@@ -41,22 +41,10 @@
       <p class="subtitle">Du jeudi 29 mai au dimanche 1er juin 2014</p>
 
       <table class="infos">
-        <tr>
-          <th>Durée</th>
-          <td>4 jours</td>
-        </tr>
-        <tr>
-          <th>Prix</th>
-          <td>499 €</td>
-        </tr>
-        <tr>
-          <th>Dates</th>
-          <td>Du jeudi 29 mai au dimanche 1er juin 2014</td>
-        </tr>
-        <tr>
-          <th>Région</th>
-          <td>La Spezia (Ligurie, Italie)</td>
-        </tr>
+        <tr><th>Durée</th><td>4 jours</td></tr>
+        <tr><th>Prix</th><td>499 €</td></tr>
+        <tr><th>Dates</th><td>Du jeudi 29 mai au dimanche 1er juin 2014</td></tr>
+        <tr><th>Région</th><td>La Spezia (Ligurie, Italie)</td></tr>
       </table>
 
       <div class="card">
@@ -73,33 +61,33 @@
         <p>Après le petit déjeuner, vous prendrez le chemin du retour. Déjeuner en cours de route et arrêt à Suse pour une dégustation et pour le shopping. Arrivée en fin de journée.</p>
       </div>
 
-      <h4 class="section-title" style="margin-top:20px">Nos prix comprennent :</h4>
+      <h4 class="section-title section-title--spaced-20">Nos prix comprennent :</h4>
       <ul class="tick">
         <li>Le transport en autocar grand tourisme.</li>
-        <li>Le logement en hôtel ***.</li>
+        <li>Le logement en hôtel 3 étoiles.</li>
         <li>Les repas du déjeuner du jour 1 au jour 4.</li>
         <li>Les visites, entrées et excursions mentionnées au programme.</li>
         <li>Les services d’un guide-accompagnateur les jours 2 et 3.</li>
         <li>L’assurance rapatriement.</li>
       </ul>
 
-      <h4 class="section-title" style="margin-top:18px">Nos prix ne comprennent pas :</h4>
+      <h4 class="section-title section-title--spaced-18">Nos prix ne comprennent pas :</h4>
       <ul class="cross">
         <li>Le supplément chambre individuelle : 60 €.</li>
         <li>Les boissons.</li>
         <li>L’assurance annulation : 20 €.</li>
       </ul>
 
-      <h4 class="section-title" style="margin-top:18px">Formalité :</h4>
+      <h4 class="section-title section-title--spaced-18">Formalité :</h4>
       <p>Carte d’identité en cours de validité.</p>
 
       <div class="gallery" aria-label="Galerie de photos">
-        <img src="../actif/img/cinque-terre-01.jpg" alt="Village coloré des Cinque Terres" />
-        <img src="../actif/img/cinque-terre-02.jpg" alt="Crique et mer turquoise" />
-        <img src="../actif/img/cinque-terre-03.jpg" alt="Portofino" />
+        <img src="../actif/img/cinque-terre-01.jpg" alt="Village coloré des Cinque Terres">
+        <img src="../actif/img/cinque-terre-02.jpg" alt="Crique et mer turquoise">
+        <img src="../actif/img/cinque-terre-03.jpg" alt="Portofino">
       </div>
 
-      <p style="color:var(--muted); margin-top:8px">Prix par personne, base chambre double.</p>
+      <p class="note">Prix par personne, base chambre double.</p>
     </div>
   </main>
 
@@ -107,6 +95,8 @@
     <div class="container">© <span id="y"></span> NovaTrip - By MaxiDev</div>
   </footer>
 
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
