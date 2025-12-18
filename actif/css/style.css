@@ -44,6 +44,12 @@ a {
   padding: 0 16px;
 }
 
+.container brand {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
 header {
   background: var(--paper);
   border-bottom: 1px solid var(--border);
@@ -67,6 +73,7 @@ header {
   height: 48px;
   width: auto;
   object-fit: contain;
+  margin-left: 10px;
 }
 
 nav {
